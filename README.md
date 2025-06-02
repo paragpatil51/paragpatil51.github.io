@@ -7,9 +7,12 @@ Aspiring Data Scientist | AI & Data Science Student
 ---
 
 ## Technical Skills
-- Python                   - MS Excel (Advanced)
-- Machine Learning         - Tableau
-- Data Analytics           - Jupyter Notebook
+- Python                  
+- Machine Learning        
+- Data Analytics
+- MS Excel (Advanced)
+- Tableau
+- Jupyter Notebook
 - NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn
 
 ---
