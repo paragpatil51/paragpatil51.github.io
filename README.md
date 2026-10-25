@@ -1,86 +1,54 @@
-# Parag Patil
+# paragpatil51.github.io
 
-**AI / GenAI Engineer** · Python · FastAPI · LLMs · RAG · AI Agents
+> Portfolio of **Parag Patil**, GenAI / LLM Engineer · [Live site](https://paragpatil51.github.io/) · [LinkedIn](https://www.linkedin.com/in/parag-patil-824b52253/)
 
-🔗 [LinkedIn](https://www.linkedin.com/in/parag-patil-824b52253/) · [GitHub](https://github.com/paragpatil51)
+A hand-built static site with no framework and no build step, served directly by GitHub Pages.
 
-Open to AI/ML and GenAI engineering roles in Pune, Mumbai, Bengaluru, Hyderabad or remote. Available to join immediately.
+## What's inside
 
----
+| Feature | How it works |
+| --- | --- |
+| Portrait-first hero | Photo with a `whoami` JSON panel streamed token by token, like a structured-output response |
+| Writing | LinkedIn articles with summaries, key ideas and every figure, in an in-page reader with a lightbox |
+| AI assistant | Floating chat on every page: BM25 retrieval, source chips, follow-up questions, refuses when there's no evidence |
+| Embedding-space background | Canvas particle field that links nearby points and reacts to the cursor |
+| Markdown workspace | `README.md`, `MODEL_CARD.md` and `AGENTS.md` in an editor view with Raw / Preview toggle |
+| Architecture diagrams | Pipelines for QPulse, QStellar (agents + RAG) and QDetect, drawn in HTML/CSS |
+| Command palette | `Ctrl / ⌘ + K` or `/` to jump to sections, open files and run actions |
+| Context-window meter | Reading progress shown as tokens consumed |
+| Light & dark themes | Follows the OS setting, with a manual toggle that is remembered |
 
-## Experience
+## Structure
 
-### AI/ML Trainee Developer – Quasar Cybertech
-*Jul 2025 – Jun 2026 · Nashik*
+```
+index.html                  page markup + SEO / Open Graph / JSON-LD
+assets/css/style.css        design tokens, layout, components, responsive rules
+assets/js/main.js           interactions: theme, stream, canvas, IDE, palette, retriever
+assets/js/files.js          Markdown shown in the workspace (README / MODEL_CARD / AGENTS)
+assets/js/writing.js        LinkedIn articles (summary, key ideas, figure captions) and feed posts
+assets/js/knowledge.js      passages the AI assistant searches (with source links and follow-ups)
+assets/img/                 portrait, favicon, social preview image
+assets/img/writing/<slug>/  article figures, 00.jpg is the cover
+assets/Parag-Patil-Resume.pdf
+```
 
-- Independently architected and developed **[QPulse](https://qpulse.quasarcybertech.com/)**, an end-to-end Generative AI platform: React + TypeScript frontend, FastAPI backend, PostgreSQL, RAG pipelines over ChromaDB and LLM integrations
-- Worked on **[QStellar](https://qstellar.co/)**: local LLM deployment, data gathering and ETL pipelines that processed ~300,000 records for model training and semantic search
-- Worked with Claude, OpenAI, Gemini, Llama and Gemma models, with a focus on RAG data workflows, chunking strategies, token optimisation and secure-by-design AI systems
+## Editing content
 
-### Data Science Intern – Technokraft Pvt Ltd
-*Dec 2023 – Jan 2024*
+- **Projects, experience, skills:** edit `index.html` directly.
+- **Markdown files:** edit `assets/js/files.js`. Each file is plain Markdown, one line per array item.
+- **New article:** add an entry to `assets/js/writing.js` and drop its images into `assets/img/writing/<slug>/` as `00.jpg`, `01.jpg`, and so on, one per figure caption.
+- **Assistant answers:** edit `assets/js/knowledge.js`. Each passage needs `id`, `title`, `text`, `k` (extra keywords), `href` (source section) and `next` (follow-up questions).
+- **Résumé:** replace `assets/Parag-Patil-Resume.pdf` and keep the same filename.
 
-- Built a home-loan approval prediction model using Logistic Regression
-- Used data visualisation in Tableau to make the model's results easier to interpret
+## Run locally
 
----
+Open `index.html` in a browser, or serve the folder:
 
-## Technical Skills
+```bash
+python -m http.server 8000
+```
 
-- **Languages & backend:** Python, SQL, FastAPI, REST APIs, PostgreSQL; working knowledge of Java and C++
-- **GenAI:** LLMs, RAG, LangChain, LangGraph, AI agents, vector databases (ChromaDB), semantic search, LLM fine-tuning, prompt engineering
-- **Machine learning & data:** Scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, Matplotlib, Seaborn, ETL pipelines, Tableau, Advanced Excel
-- **Frontend, cloud & tools:** React, TypeScript, Tailwind CSS, Docker, AWS, Google Cloud, Nginx, Git, CI/CD
+## Deploy
 
----
-
-## Projects
-
-### 🔹 QPulse – Generative AI platform (Quasar Cybertech)
-End-to-end GenAI product built from scratch: RAG pipelines over ChromaDB, LLM integrations, a FastAPI backend with PostgreSQL and a React + TypeScript frontend.
-**Live:** [qpulse.quasarcybertech.com](https://qpulse.quasarcybertech.com/)
-
-### 🔹 QStellar – data and local LLM pipeline (Quasar Cybertech)
-Data gathering and ETL pipelines over ~300,000 records, local LLM deployment and semantic search.
-**Live:** [qstellar.co](https://qstellar.co/)
-
-### 🔹 [Loan Prediction System](https://github.com/paragpatil51/Loan-Prediction-System-Project)
-Machine learning model that predicts loan approval from applicant details such as income, credit history and loan amount.
-- Data preprocessing and handling of missing values
-- Supervised classification models (Logistic Regression, Decision Trees)
-- Visualisation of key insights in Tableau
-
-**Tech:** Python, Pandas, Scikit-learn, Jupyter Notebook, Tableau
-
-### 🔹 [Big Mart Sales Prediction](https://github.com/paragpatil51/Big-Mart-Sale-Prediction-Project)
-Regression model that forecasts product sales across retail outlets from product type, outlet size, location and pricing.
-- Data cleaning, feature engineering and exploratory data analysis
-- Regression models to identify sales drivers and trends
-
-**Tech:** Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn
-
----
-
-## Education
-
-**B.E. – Artificial Intelligence and Data Science**
-*K.K. Wagh Institute of Engineering Education & Research, Nashik* · 2021 – 2025 · CGPA 8.5
-
-**XII (HSC) – Science**
-*Ram Raj Jr. College, Nashik* · 2021 · 85.55%
-
----
-
-## Certifications
-
-- **Advanced Excel (120 hrs)** – MKCL KLiC *(Apr 2024)*
-- **Data Science Certificate** – Technokraft *(Aug 2023)*
-
-## Extra-Curricular
-
-- **Translators Without Borders** – reviewed 1,000+ words of translated content from English to Marathi
-- **United Nations Volunteers (UNV)** – shortlisted for and took part in a UNFPA online meeting on demographic trends in Germany
-
----
-
-📬 The best way to reach me is [LinkedIn](https://www.linkedin.com/in/parag-patil-824b52253/).
+Push these files to the root of the `paragpatil51.github.io` repository on the `main` branch.
+GitHub Pages publishes them automatically.

@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parag Patil — GenAI &amp; LLM Engineer</title>
+  <meta name="description" content="Parag Patil is a GenAI / LLM engineer who builds production RAG pipelines, multi-agent AI assistants and LLM data pipelines with Python, FastAPI, LangChain, ChromaDB and React + TypeScript. Open to roles, immediate joiner.">
+  <meta name="author" content="Parag Patil">
+  <meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
+  <link rel="canonical" href="https://paragpatil51.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paragpatil51.github.io/">
+  <meta property="og:title" content="Parag Patil — GenAI & LLM Engineer">
+  <meta property="og:description" content="RAG pipelines, multi-agent assistants and LLM systems shipped to production. Open to GenAI / LLM engineering roles.">
+  <meta property="og:image" content="https://paragpatil51.github.io/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/img/parag-patil.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Parag Patil",
+    "jobTitle": "GenAI / LLM Engineer",
+    "url": "https://paragpatil51.github.io/",
+    "image": "https://paragpatil51.github.io/assets/img/parag-patil.jpg",
+    "alumniOf": "K.K. Wagh Institute of Engineering Education & Research",
+    "address": { "@type": "PostalAddress", "addressLocality": "Nashik", "addressCountry": "IN" },
+    "knowsLanguage": ["English", "Hindi", "Marathi"],
+    "sameAs": ["https://www.linkedin.com/in/parag-patil-824b52253/", "https://github.com/paragpatil51"],
+    "knowsAbout": ["Generative AI", "Large Language Models", "Retrieval-Augmented Generation", "AI Agents", "Harness Engineering", "LoRA", "LangChain", "ChromaDB", "FastAPI", "Machine Learning", "React", "TypeScript"]
+  }
+  </script>
+</head>
+<body>
+  <span id="top" class="top-anchor" aria-hidden="true"></span>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ───────────── NAV ───────────── -->
+  <header class="nav">
+    <div class="nav__inner wrap">
+      <a class="brand" href="#top" aria-label="Parag Patil, back to top">
+        <img class="brand__avatar" src="assets/img/parag-patil.jpg" alt="" width="32" height="32">
+        <span class="brand__name">Parag Patil</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#writing">Writing</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="search-btn" type="button" data-open-palette aria-label="Search the site">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="search-btn__label">Search</span>
+        </button>
+        <button class="icon-btn" type="button" id="themeToggle" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--small btn--accent nav__cta" href="https://www.linkedin.com/in/parag-patil-824b52253/" target="_blank" rel="noopener">Hire me</a>
+        <button class="icon-btn nav__menu" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#writing">Writing</a>
+      <a href="#skills">Skills &amp; certifications</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button type="button" class="mobile-menu__ask" data-open-chat>Ask my AI assistant</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero">
+      <canvas class="hero__field" id="field" aria-hidden="true"></canvas>
+      <div class="wrap hero__grid">
+
+        <figure class="portrait-card hero-slider reveal" id="heroSlider" data-slide="0" aria-roledescription="carousel" aria-label="Parag Patil: portrait and campus hiring drive">
+          <div class="portrait-card__frame">
+            <div class="slides" id="slides" aria-live="off">
+              <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+                <img src="assets/img/parag-patil.jpg" alt="Parag Patil, smiling, in a dark suit and tie" width="951" height="1129" fetchpriority="high">
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 4"
+                   data-title="Presenting QPulse to students"
+                   data-text="On stage during my previous company's campus placement drive, walking engineering students through QPulse, the threat-intelligence platform I built.">
+                <img class="slide__bg" src="assets/img/campus/qpulse-talk.jpg" alt="" aria-hidden="true" loading="lazy">
+                <img src="assets/img/campus/qpulse-talk.jpg" alt="Parag on stage with a microphone, presenting QPulse on a projected slide" width="480" height="624" loading="lazy">
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 4"
+                   data-title="Candidate pool → interviewer's chair"
+                   data-text="Only a year after graduating, I represented my previous company across engineering colleges during its placement drives.">
+                <img class="slide__bg" src="assets/img/campus/podium.jpg" alt="" aria-hidden="true" loading="lazy">
+                <img src="assets/img/campus/podium.jpg" alt="Parag speaking to students from a podium in a college seminar hall" width="800" height="1067" loading="lazy">
+              </div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 4"
+                   data-title="Leading technical evaluations"
+                   data-text="Ran the technical assessment rounds and evaluated candidates, which showed me how much mentorship and real-world exposure matter to aspiring engineers.">
+                <img class="slide__bg" src="assets/img/campus/assessment.jpg" alt="" aria-hidden="true" loading="lazy">
+                <img src="assets/img/campus/assessment.jpg" alt="Parag supervising students taking a written technical assessment in a large hall" width="480" height="640" loading="lazy">
+              </div>
+            </div>
+
+            <span class="chip chip--float chip--a"><i class="dot"></i>RAG pipelines</span>
+            <span class="chip chip--float chip--b"><i class="dot"></i>AI agents</span>
+            <span class="chip chip--float chip--c"><i class="dot"></i>Gemma · Qwen · Ollama</span>
+            <span class="chip chip--story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>Campus hiring · Feb 2026</span>
+
+            <div class="story-bars" role="tablist" aria-label="Choose a slide">
+              <button type="button" role="tab" aria-label="Portrait" aria-selected="true"><i></i></button>
+              <button type="button" role="tab" aria-label="Presenting QPulse to students" aria-selected="false"><i></i></button>
+              <button type="button" role="tab" aria-label="Representing my previous company" aria-selected="false"><i></i></button>
+              <button type="button" role="tab" aria-label="Leading technical evaluations" aria-selected="false"><i></i></button>
+            </div>
+            <button class="slide-nav slide-nav--prev" type="button" data-slide-step="-1" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="slide-nav slide-nav--next" type="button" data-slide-step="1" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+
+          <figcaption class="whoami">
+            <span class="whoami__bar">
+              <span class="c-mute">$</span> <span id="panelCmd">whoami</span>
+              <span class="whoami__count" id="panelCount">1/4</span>
+              <button class="whoami__replay" type="button" id="slidePause" aria-label="Pause slideshow" aria-pressed="false">
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg>
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z"/></svg>
+              </button>
+              <button class="whoami__replay" type="button" id="replay" aria-label="Replay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+            </span>
+            <pre class="whoami__out" id="stream" aria-hidden="true"></pre>
+            <div class="story" id="story" hidden>
+              <p class="story__title" id="storyTitle"></p>
+              <p class="story__text" id="storyText"></p>
+              <a class="story__link" id="storyLink" href="https://www.linkedin.com/feed/update/urn:li:activity:7427387244249972736/" target="_blank" rel="noopener">Read the LinkedIn post ↗</a>
+            </div>
+            <span class="sr-only">Parag Patil, GenAI / LLM Engineer, open to work, immediate joiner.</span>
+          </figcaption>
+        </figure>
+
+        <div class="hero__copy">
+          <p class="status reveal">
+            <span class="status__dot" aria-hidden="true"></span>
+            Open to work · Immediate joiner
+          </p>
+          <p class="hero__hello reveal">Hi, I'm <strong>Parag Patil</strong>, a <strong>GenAI / LLM Engineer</strong>.</p>
+          <h1 class="hero__title reveal">
+            I build LLM systems that <em>ship</em>&thinsp;—<br class="br-lg"> and stay <em class="accent">grounded.</em>
+          </h1>
+          <p class="hero__lede reveal">
+            Over the past year I took RAG pipelines, multi-agent assistants and LLM data pipelines from an empty repo to production
+            on live cybersecurity products, as the acting AI team lead at my previous company. I also write about AI engineering on LinkedIn, where 870+ people follow along.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--accent" href="#work">View my work <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="assets/Parag-Patil-Resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+              Résumé
+            </a>
+            <button class="btn btn--ghost" type="button" data-open-chat>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+              Ask my AI
+            </button>
+          </div>
+          <ul class="hero__meta reveal" aria-label="Quick facts">
+            <li><span>Based in</span>Nashik, India</li>
+            <li><span>Open to</span>Pune · Mumbai · Bengaluru · Hyderabad · Remote</li>
+            <li><span>Languages</span>English · Hindi · Marathi</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="kpis" aria-label="Impact in numbers">
+          <li class="kpi reveal">
+            <span class="kpi__num" data-count="83321">83,321</span>
+            <span class="kpi__label">real SIEM alerts analysed by my triage engine</span>
+          </li>
+          <li class="kpi reveal">
+            <span class="kpi__num"><span data-count="84">84</span>%</span>
+            <span class="kpi__label">flagged as noise, with zero critical signals suppressed</span>
+          </li>
+          <li class="kpi reveal">
+            <span class="kpi__num">~<span data-count="300">300</span>k</span>
+            <span class="kpi__label">records ingested &amp; cleaned through my ETL pipelines</span>
+          </li>
+          <li class="kpi reveal">
+            <span class="kpi__num" data-count="7">7</span>
+            <span class="kpi__label">Indian languages auto-translated by an LLM in QPulse</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── MODELS STRIP ───────────── -->
+    <section class="strip" aria-label="Models and tools I've shipped with">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>Gemma-3-27B</span><span>Qwen2-7B · Ollama</span><span>Google Gemini API</span><span>LangChain</span><span>ChromaDB</span><span>BGE embeddings</span><span>FastAPI</span><span>PostgreSQL</span><span>scikit-learn</span><span>React + TypeScript</span><span>Wazuh SIEM</span><span>Docker</span>
+          <span aria-hidden="true">Gemma-3-27B</span><span aria-hidden="true">Qwen2-7B · Ollama</span><span aria-hidden="true">Google Gemini API</span><span aria-hidden="true">LangChain</span><span aria-hidden="true">ChromaDB</span><span aria-hidden="true">BGE embeddings</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">scikit-learn</span><span aria-hidden="true">React + TypeScript</span><span aria-hidden="true">Wazuh SIEM</span><span aria-hidden="true">Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── WORK ───────────── -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>01</span><i>~/parag/</i>projects/</p>
+          <h2 class="section__title">Three production systems, <em>end to end.</em></h2>
+          <p class="section__lede">Built at my previous company, a cybersecurity product firm, between July 2025 and June 2026. Two of these I built alone; on the third I owned the AI layer inside a five-person team. Each one is shown with its architecture, because how a system is wired says more than a list of tools.</p>
+        </header>
+
+        <nav class="case-nav reveal" aria-label="Projects">
+          <a href="#qpulse"><b>QPulse</b><span>LLM threat intelligence</span></a>
+          <a href="#qstellar"><b>QStellar AI</b><span>Agents &amp; document RAG</span></a>
+          <a href="#qdetect"><b>QDetect</b><span>ML alert triage</span></a>
+        </nav>
+
+        <!-- QPulse -->
+        <article class="case reveal" id="qpulse">
+          <div class="case__intro">
+            <div class="case__tags">
+              <span class="tag tag--accent">Sole developer</span>
+              <span class="tag">LLM pipeline</span>
+              <span class="tag tag--live"><i class="dot"></i>Live</span>
+            </div>
+            <h3 class="case__title">QPulse <span>Global Threat Pulse · cyber threat intelligence</span></h3>
+            <p class="case__summary">A cyber threat-intelligence platform that reads the security news so analysts don't have to. Every article from global and Indian feeds is turned by an LLM into structured, ranked intelligence, then translated and emailed to the people who need it.</p>
+            <ul class="case__points">
+              <li><b>LLM as a structured extractor.</b> Gemma-3-27B at temperature 0.1 returns one strict JSON per article: severity, a 1–10 industry risk score with justification, executive summary, kill-chain analysis, MITRE ATT&amp;CK TTPs, CVEs, IOCs, detection ideas and recommendations.</li>
+              <li><b>Token budget as a design input.</b> Content is trimmed before the call, URLs are de-duplicated so nothing is analysed twice, work runs in batches of 20 with cooldowns, and a limiter holds translation to 60 RPM / 15k TPM.</li>
+              <li><b>Reaches people in their language.</b> Articles are machine-translated into 7 Indian regional languages, and subscribers get personalised daily digests, including a Regulator Watch for RBI and CERT-In.</li>
+              <li><b>Hardened for the open internet.</b> Tiered rate limits, reCAPTCHA v3, security-headers middleware, trusted hosts and masked validation errors.</li>
+            </ul>
+            <div class="case__foot">
+              <ul class="chips" aria-label="Tech stack">
+                <li>Gemma-3-27B</li><li>Gemini API</li><li>FastAPI</li><li>PostgreSQL · JSONB</li><li>APScheduler</li><li>React 19</li><li>TypeScript</li><li>Tailwind</li>
+              </ul>
+              <a class="link-arrow" href="https://qpulse.quasarcybertech.com/" target="_blank" rel="noopener">Visit QPulse live <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="case__diagram spot" aria-label="QPulse architecture">
+            <p class="diagram__label">qpulse/architecture.md · ingest → reason → deliver</p>
+            <ol class="flow">
+              <li class="node"><span class="node__k">Sources</span><span class="node__v">Global security RSS<br>CERT-In · RBI · Indian feeds</span></li>
+              <li class="node"><span class="node__k">Gatekeeper</span><span class="node__v">Keyword filter · URL dedup<br>runs before any LLM call</span></li>
+              <li class="node node--hot"><span class="node__k">LLM · Gemma-3-27B</span><span class="node__v">temp 0.1 → strict JSON<br>TTPs · CVEs · IOCs · risk</span></li>
+              <li class="node"><span class="node__k">PostgreSQL</span><span class="node__v">JSONB staging + GIN<br>ETL → clean tables</span></li>
+              <li class="node"><span class="node__k">Deliver</span><span class="fan"><i>Dashboard</i><i>7 languages</i><i>Email digests</i></span></li>
+            </ol>
+            <div class="diagram__note">
+              <span class="note__k">Cost controls</span>
+              <span>input trim</span><span>batch × 20</span><span>dedup</span><span>retry on 429</span><span>60 RPM / 15k TPM</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- QStellar -->
+        <article class="case case--flip reveal" id="qstellar">
+          <div class="case__intro">
+            <div class="case__tags">
+              <span class="tag tag--accent">AI work · 5-person team</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Agents</span>
+              <span class="tag tag--live"><i class="dot"></i>Live</span>
+            </div>
+            <h3 class="case__title">QStellar AI <span>Multi-agent assistant &amp; document RAG</span></h3>
+            <p class="case__summary">An AI-powered cyber risk intelligence platform. I worked on its AI assistant, built the specialist agents, and built the document RAG pipeline that lets analysts question their own security reports, with answers that cite sources and are checked against live platform data. I also built the React + TypeScript frontend these features live in.</p>
+            <ul class="case__points">
+              <li><b>Agents that know when not to use an LLM.</b> A router sends factual questions ("how many critical CVEs?") straight to SQL for exact answers, and only analytical ones to the Asset, Vulnerability, Threat and Executive agents, which run in parallel under 8s / 18s SLA timeouts.</li>
+              <li><b>Grounded before it's shown.</b> A grounding layer checks the synthesised answer against the database (CVE IDs exist, counts and severities match), with a scope guard in front and a circuit breaker behind.</li>
+              <li><b>RAG tuned per file type.</b> LangChain loaders for PDF, DOCX, CSV and Excel; different chunk sizes for prose, PDFs and tables; BGE-small embeddings; a ChromaDB collection per user so documents never leak between tenants.</li>
+              <li><b>Private by default.</b> Answers come from Qwen2-7B served locally through Ollama, so sensitive reports never leave the network.</li>
+            </ul>
+            <div class="case__foot">
+              <ul class="chips" aria-label="Tech stack">
+                <li>LangChain</li><li>ChromaDB</li><li>BGE · FastEmbed</li><li>Ollama · Qwen2-7B</li><li>asyncio agents</li><li>FastAPI</li><li>React 18</li><li>TypeScript</li>
+              </ul>
+              <a class="link-arrow" href="https://qstellar.co/" target="_blank" rel="noopener">Visit qstellar.co <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="case__diagram spot" aria-label="QStellar AI assistant and RAG architecture">
+            <div class="tabs" role="tablist" aria-label="Diagram">
+              <button role="tab" aria-selected="true" aria-controls="dg-agents" id="tab-agents">Multi-agent assistant</button>
+              <button role="tab" aria-selected="false" aria-controls="dg-rag" id="tab-rag" tabindex="-1">Document RAG</button>
+            </div>
+            <div class="tabpanel" id="dg-agents" role="tabpanel" aria-labelledby="tab-agents">
+              <ol class="flow">
+                <li class="node"><span class="node__k">Query</span><span class="node__v">Natural-language question</span></li>
+                <li class="node"><span class="node__k">Scope guard → Router</span><span class="node__v">FACTUAL · ANALYTICAL · CONVERSATIONAL</span></li>
+                <li class="node node--branch">
+                  <span class="branch">
+                    <span class="branch__col"><span class="node__k">Factual path</span><span class="node__v">Pattern-matched SQL<br>exact answer, no LLM</span></span>
+                    <span class="branch__col branch__col--hot"><span class="node__k">Analytical · parallel</span><span class="fan fan--grid"><i>Asset</i><i>Vuln</i><i>Threat</i><i>Exec</i></span></span>
+                  </span>
+                </li>
+                <li class="node node--hot"><span class="node__k">Synthesis · Qwen2-7B (local)</span><span class="node__v">Context budgets per agent</span></li>
+                <li class="node"><span class="node__k">Grounding layer</span><span class="node__v">Verify CVEs, counts, severities vs DB</span></li>
+                <li class="node"><span class="node__k">Response</span><span class="node__v">Answer + confidence + source</span></li>
+              </ol>
+            </div>
+            <div class="tabpanel" id="dg-rag" role="tabpanel" aria-labelledby="tab-rag" hidden>
+              <ol class="flow">
+                <li class="node"><span class="node__k">Upload</span><span class="node__v">PDF · DOCX · CSV · Excel</span></li>
+                <li class="node"><span class="node__k">LangChain loaders</span><span class="node__v">Parse + metadata per document</span></li>
+                <li class="node"><span class="node__k">Chunking by type</span>
+                  <span class="chunks">
+                    <span><i style="--w:55%"></i>PDF 1000 / 150</span>
+                    <span><i style="--w:66%"></i>Text 1200 / 200</span>
+                    <span><i style="--w:28%"></i>Tables 500 / 50</span>
+                  </span>
+                </li>
+                <li class="node"><span class="node__k">Embed · BGE-small-en-v1.5</span><span class="node__v">FastEmbed, 384-d vectors</span></li>
+                <li class="node"><span class="node__k">ChromaDB</span><span class="node__v">One collection per user / session</span></li>
+                <li class="node node--hot"><span class="node__k">Answer · Qwen2-7B</span><span class="node__v">Cited answer + CVE cross-reference</span></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <!-- QDetect -->
+        <article class="case reveal" id="qdetect">
+          <div class="case__intro">
+            <div class="case__tags">
+              <span class="tag tag--accent">Sole developer</span>
+              <span class="tag">Applied ML</span>
+              <span class="tag">SIEM</span>
+            </div>
+            <h3 class="case__title">QDetect <span>ML-driven SOC alert triage · QStellar module</span></h3>
+            <p class="case__summary">Security teams drown in alerts. QDetect is the QStellar module I designed and built on my own: it connects to a live Wazuh SIEM, learns which alerts are noise and which are real, and turns what's left into a 0–100 security score per asset.</p>
+            <ul class="case__points">
+              <li><b>Measured on real data.</b> Over 83,321 production alerts, a rule-based pass flagged 70,336 (about 84%) as noise, with guardrails that never suppress MITRE-mapped, level ≥ 12, ransomware or endpoint-agent signals.</li>
+              <li><b>Four models for the grey zone.</b> The ~12k alerts left over are scored by an ensemble of Isolation Forest, DBSCAN, Random Forest and a KNN / rule-family classifier, with a low-sample fallback so rare rules aren't ignored.</li>
+              <li><b>Humans stay in charge.</b> Suggested suppression rules go through approve / reject / revert, and feature importances explain each score.</li>
+              <li><b>Full integration.</b> Wazuh REST API + OpenSearch indexer, scheduled sync of agents, alerts, vulnerabilities and CISA KEV into PostgreSQL, all served through 80+ FastAPI endpoints.</li>
+            </ul>
+            <div class="case__foot">
+              <ul class="chips" aria-label="Tech stack">
+                <li>scikit-learn</li><li>Isolation Forest</li><li>DBSCAN</li><li>Random Forest</li><li>KNN</li><li>Wazuh · OpenSearch</li><li>FastAPI</li><li>PostgreSQL</li>
+              </ul>
+              <span class="link-arrow link-arrow--muted">Module inside QStellar</span>
+            </div>
+          </div>
+
+          <div class="case__diagram spot" aria-label="QDetect alert funnel">
+            <p class="diagram__label">qdetect/funnel.md · real production data</p>
+            <div class="funnel" role="img" aria-label="83,321 total alerts; 70,336 suppressed by rules (84%); about 12,163 grey-zone alerts scored by the ML ensemble; critical and MITRE-mapped signals always kept.">
+              <div class="funnel__row" title="All alerts pulled from Wazuh: 83,321">
+                <span class="funnel__name">All Wazuh alerts</span><span class="funnel__bar"><i style="--w:100%"></i></span><span class="funnel__val">83,321</span>
+              </div>
+              <div class="funnel__row" title="Suppressed by the rule-based pass: 70,336 (84%)">
+                <span class="funnel__name">Rule-based noise</span><span class="funnel__bar"><i style="--w:84.4%"></i></span><span class="funnel__val">70,336</span>
+              </div>
+              <div class="funnel__row funnel__row--hot" title="Grey-zone alerts scored by the 4-model ensemble: about 12,163">
+                <span class="funnel__name">Grey zone → ML</span><span class="funnel__bar"><i style="--w:14.6%"></i></span><span class="funnel__val">~12.2k</span>
+              </div>
+            </div>
+            <ol class="flow flow--compact">
+              <li class="node"><span class="node__k">Wazuh SIEM</span><span class="node__v">REST :55000 · OpenSearch</span></li>
+              <li class="node"><span class="node__k">Sync → PostgreSQL</span><span class="node__v">Alerts · vulns · CISA KEV</span></li>
+              <li class="node node--hot"><span class="node__k">Ensemble scorer</span><span class="fan fan--grid"><i>IForest</i><i>DBSCAN</i><i>RForest</i><i>KNN</i></span></li>
+              <li class="node"><span class="node__k">Security score</span><span class="node__v">0–100 per asset, event-driven</span></li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- Earlier work -->
+        <div class="more reveal">
+          <h3 class="more__title">Earlier &amp; open-source work</h3>
+          <div class="more__grid">
+            <a class="mini spot" href="https://github.com/paragpatil51/Loan-Prediction-System-Project" target="_blank" rel="noopener">
+              <span class="mini__k">Classification · Internship</span>
+              <span class="mini__t">Loan Prediction System</span>
+              <span class="mini__d">Predicts home-loan approval from income, credit history and loan amount. Logistic Regression and Decision Trees, with results in Tableau.</span>
+              <span class="mini__s">Python · Pandas · scikit-learn · Tableau</span>
+            </a>
+            <a class="mini spot" href="https://github.com/paragpatil51/Big-Mart-Sale-Prediction-Project" target="_blank" rel="noopener">
+              <span class="mini__k">Regression</span>
+              <span class="mini__t">Big Mart Sales Prediction</span>
+              <span class="mini__d">Forecasts product sales across outlets, with data cleaning, feature engineering and exploratory analysis.</span>
+              <span class="mini__s">Python · NumPy · Seaborn · scikit-learn</span>
+            </a>
+            <a class="mini spot" href="https://github.com/paragpatil51/bank-privacy-demo" target="_blank" rel="noopener">
+              <span class="mini__k">Privacy engineering</span>
+              <span class="mini__t">Bank Privacy Demo</span>
+              <span class="mini__d">A fictional bank site showing cookie consent, onboarding consent management and an admin dashboard for consent records.</span>
+              <span class="mini__s">JavaScript · Consent management</span>
+            </a>
+            <a class="mini spot" href="https://github.com/paragpatil51/PBL-PROJECT-BASED-LEARNING-" target="_blank" rel="noopener">
+              <span class="mini__k">Research</span>
+              <span class="mini__t">Metaverse &amp; Deepfakes</span>
+              <span class="mini__d">College research on the challenges and applications of the metaverse and deepfakes, including AI avatars and deepfake detection.</span>
+              <span class="mini__s">Research · AI ethics</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── EXPERIENCE ───────────── -->
+    <section class="section section--alt" id="experience">
+      <div class="wrap exp">
+        <header class="section__head exp__head reveal">
+          <p class="eyebrow"><span>02</span><i>~/parag/</i>training_log.md</p>
+          <h2 class="section__title">Where I've <em>built.</em></h2>
+          <p class="section__lede">One year of production GenAI, a data-science internship and a degree in AI &amp; Data Science.</p>
+          <div class="exp__facts">
+            <div><b>1 yr</b><span>production GenAI</span></div>
+            <div><b>3</b><span>systems shipped</span></div>
+            <div><b>8.24</b><span>CGPA, B.E. AI &amp; DS</span></div>
+          </div>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__when">Jul 2025 — Jun 2026 · 1 yr</div>
+            <div class="tl__body">
+              <h3>Trainee Developer <span class="tl__role">acting AI Team Lead</span></h3>
+              <p class="tl__org">Previous company · Cybersecurity products · Nashik · Hybrid</p>
+              <ul>
+                <li>Led all AI development across the company's products, delivering the AI components of QPulse and QStellar, and set practices for secure coding, data privacy and QA across the SDLC.</li>
+                <li>Built LLM pipelines on Gemma-3-27B through the Google Gemini API, with token optimisation (input trimming, batching, rate-limit control, dedup before model calls) to cut API cost and latency.</li>
+                <li>Evaluated several local LLMs through Ollama and deployed Qwen2-7B for private on-premise inference, moving to Google's APIs as needs grew.</li>
+                <li>Fine-tuned a ~3B-parameter open model on an in-house dataset of cybersecurity reports. The team ultimately went with Gemma-3-27B for production, which was a practical lesson in when fine-tuning pays off.</li>
+                <li>Built automated data-gathering modules and ETL pipelines that ingested and cleaned roughly 300,000 records for model training and semantic search.</li>
+              </ul>
+              <div class="tl__highlight">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+                <p><b>From candidate to interviewer in a year.</b> In February 2026 I represented my previous company at campus placement drives across engineering colleges: presenting QPulse to students and leading the technical evaluations of candidates. <a class="tl__link" href="https://www.linkedin.com/feed/update/urn:li:activity:7427387244249972736/" target="_blank" rel="noopener">See the photos on LinkedIn ↗</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__when">Dec 2023 — Jan 2024 · 2 mos</div>
+            <div class="tl__body">
+              <h3>Data Science Intern</h3>
+              <p class="tl__org">TechnoKraft Training &amp; Solution Pvt. Ltd. · Remote</p>
+              <ul>
+                <li>Worked in a team on a loan-approval prediction model, from data analysis to a Logistic Regression classifier, and visualised the results in Tableau.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl tl--edu reveal">
+            <div class="tl__when">2021 — 2025</div>
+            <div class="tl__body">
+              <h3>B.E., Artificial Intelligence &amp; Data Science</h3>
+              <p class="tl__org">K.K. Wagh Institute of Engineering Education &amp; Research · Nashik</p>
+              <p class="tl__grade"><span>CGPA</span> 8.24 / 10</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="wrap">
+        <figure class="quote reveal">
+          <svg class="quote__mark" viewBox="0 0 48 36" aria-hidden="true"><path d="M0 36V20C0 8 7 1 19 0v7c-6 1-9 5-9 11h9v18H0zm29 0V20C29 8 36 1 48 0v7c-6 1-9 5-9 11h9v18H29z"/></svg>
+          <blockquote>
+            <p>Parag consistently demonstrated a strong willingness to learn, adapt, and take ownership of his assigned responsibilities. […] We believe he possesses the <em>dedication, technical aptitude, and work ethic</em> required to excel in future opportunities.</p>
+          </blockquote>
+          <figcaption><b>Director, my previous company</b> · Letter of Recommendation, August 2026</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────────── WRITING ───────────── -->
+    <section class="section" id="writing">
+      <div class="wrap">
+        <header class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow"><span>03</span><i>~/parag/</i>writing/</p>
+            <h2 class="section__title">I write about <em>AI engineering.</em></h2>
+            <p class="section__lede">Long-form articles on LinkedIn: plain-language explanations first, depth second, with caveats included. Open any article to see its key ideas and every figure.</p>
+          </div>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/parag-patil-824b52253/recent-activity/articles/" target="_blank" rel="noopener">All articles on LinkedIn <span aria-hidden="true">↗</span></a>
+        </header>
+
+        <div class="writing" id="writingGrid"></div>
+
+        <div class="posts reveal">
+          <h3 class="more__title">Recent thoughts from my feed</h3>
+          <div class="posts__grid" id="postsGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── SKILLS ───────────── -->
+    <section class="section section--alt" id="skills">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>04</span><i>~/parag/</i>requirements.txt</p>
+          <h2 class="section__title">Skills &amp; <em>certifications.</em></h2>
+          <p class="section__lede">Highlighted tools are ones I've shipped to production. The rest I've used in projects and coursework.</p>
+        </header>
+        <div class="stack">
+          <div class="stack__group reveal">
+            <h3>GenAI &amp; LLMs</h3>
+            <ul class="chips chips--lg">
+              <li class="on">LLM integration</li><li class="on">RAG</li><li class="on">AI agents</li><li class="on">LangChain</li><li class="on">ChromaDB</li><li class="on">Structured outputs</li><li class="on">Token optimisation</li><li class="on">Ollama · local LLMs</li><li class="on">Gemini API</li><li class="on">Embeddings (BGE)</li><li>Prompt engineering</li><li>LLM fine-tuning (LoRA)</li><li>Semantic search</li>
+            </ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Machine learning</h3>
+            <ul class="chips chips--lg">
+              <li class="on">scikit-learn</li><li class="on">Anomaly detection</li><li class="on">Ensembles</li><li class="on">Pandas</li><li class="on">NumPy</li><li>TensorFlow</li><li>PyTorch</li><li>Neural networks</li><li>Matplotlib · Seaborn</li><li>Tableau</li>
+            </ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Backend &amp; data</h3>
+            <ul class="chips chips--lg">
+              <li class="on">Python</li><li class="on">FastAPI</li><li class="on">PostgreSQL</li><li class="on">SQL</li><li class="on">ETL pipelines</li><li class="on">Web scraping</li><li class="on">APScheduler</li><li class="on">REST APIs</li><li>Java (working knowledge)</li><li>C++</li>
+            </ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Frontend</h3>
+            <ul class="chips chips--lg">
+              <li class="on">React</li><li class="on">TypeScript</li><li class="on">Tailwind CSS</li><li class="on">Vite</li><li>shadcn / Radix</li>
+            </ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Infra &amp; security</h3>
+            <ul class="chips chips--lg">
+              <li class="on">Nginx</li><li class="on">Wazuh / SIEM</li><li class="on">Rate limiting</li><li class="on">Secure coding</li><li>Docker</li><li>AWS</li><li>Google Cloud</li><li>CI/CD</li><li>Git</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="more__title certs__title reveal">Certifications</h3>
+        <ul class="certs">
+          <li class="cert reveal">
+            <span class="cert__logo cert__logo--pl" aria-hidden="true">P</span>
+            <div><b>Foundry &amp; AIP Builder Foundations</b><span>Palantir Technologies · Apr 2025</span></div>
+          </li>
+          <li class="cert reveal">
+            <span class="cert__logo cert__logo--in" aria-hidden="true">I</span>
+            <div><b>Deep Learning for Developers</b><span>Infosys Springboard · Oct 2024</span></div>
+          </li>
+          <li class="cert reveal">
+            <span class="cert__logo cert__logo--ms" aria-hidden="true">M</span>
+            <div><b>Career Essentials in Data Analysis</b><span>Microsoft &amp; LinkedIn · Oct 2024</span></div>
+          </li>
+          <li class="cert reveal">
+            <span class="cert__logo cert__logo--mk" aria-hidden="true">K</span>
+            <div><b>Advanced Excel, 97% · 120 hrs</b><span>MKCL KLiC · May 2024</span></div>
+          </li>
+          <li class="cert reveal">
+            <span class="cert__logo cert__logo--tk" aria-hidden="true">T</span>
+            <div><b>Data Science Course</b><span>TechnoKraft · Aug 2023</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── ABOUT (markdown workspace) ───────────── -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>05</span><i>~/parag/</i>about.md</p>
+          <h2 class="section__title">My context, <em>as files.</em></h2>
+          <p class="section__lede">AI teams describe their models with model cards and brief their coding agents with <code>AGENTS.md</code>, so here I am in the same format. Switch between <b>Raw</b> and <b>Preview</b> to see the Markdown itself.</p>
+        </header>
+
+        <div class="ide reveal" id="ide">
+          <aside class="ide__tree" aria-label="Files">
+            <p class="ide__label">Explorer</p>
+            <ul role="tree">
+              <li role="treeitem" aria-expanded="true" class="ide__dir"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>parag</span>
+                <ul role="group">
+                  <li role="none"><button class="ide__file" type="button" data-file="README.md" role="treeitem"><b class="ft ft--md">M↓</b>README.md</button></li>
+                  <li role="none"><button class="ide__file" type="button" data-file="MODEL_CARD.md" role="treeitem"><b class="ft ft--md">M↓</b>MODEL_CARD.md</button></li>
+                  <li role="none"><button class="ide__file" type="button" data-file="AGENTS.md" role="treeitem"><b class="ft ft--md">M↓</b>AGENTS.md</button></li>
+                  <li role="treeitem" aria-expanded="true" class="ide__dir"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>projects</span>
+                    <ul role="group">
+                      <li role="none"><a class="ide__file" href="#qpulse" role="treeitem"><b class="ft ft--py">py</b>qpulse/</a></li>
+                      <li role="none"><a class="ide__file" href="#qstellar" role="treeitem"><b class="ft ft--py">py</b>qstellar_ai/</a></li>
+                      <li role="none"><a class="ide__file" href="#qdetect" role="treeitem"><b class="ft ft--py">py</b>qdetect/</a></li>
+                    </ul>
+                  </li>
+                  <li role="none"><a class="ide__file" href="#writing" role="treeitem"><b class="ft ft--md">M↓</b>writing/</a></li>
+                  <li role="none"><a class="ide__file" href="assets/Parag-Patil-Resume.pdf" target="_blank" rel="noopener" role="treeitem"><b class="ft ft--pdf">pdf</b>resume.pdf</a></li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
+          <div class="ide__main">
+            <div class="ide__tabs">
+              <div class="ide__open" id="ideTabs" role="tablist" aria-label="Open files"></div>
+              <div class="seg" role="group" aria-label="View mode">
+                <button type="button" data-view="raw" aria-pressed="true">Raw</button>
+                <button type="button" data-view="preview" aria-pressed="false">Preview</button>
+              </div>
+            </div>
+            <div class="ide__body" id="ideBody" tabindex="0" aria-live="polite"></div>
+            <div class="ide__status">
+              <span><i class="status__dot status__dot--sm" aria-hidden="true"></i>main</span>
+              <span id="ideLang">Markdown</span>
+              <span id="ideLines">0 lines</span>
+              <span id="ideTokens">~0 tokens</span>
+              <span class="ide__enc">UTF-8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── APPROACH ───────────── -->
+    <section class="section section--alt" id="approach">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span>06</span><i>~/parag/</i>system_prompt.md</p>
+          <h2 class="section__title">Principles I've learned <em>from production</em>, not tutorials.</h2>
+        </header>
+        <p class="sysprompt reveal"><span class="sysprompt__role">system</span>You are Parag, an engineer shipping LLM features to real users. Before writing any code, follow these four rules.</p>
+        <div class="principles">
+          <article class="principle spot reveal">
+            <span class="principle__n">i.</span>
+            <h3>Ground before you generate</h3>
+            <p>If the answer lives in a database, query the database. I route factual questions to SQL, save the LLM for reasoning, and check its output against real data before anyone sees it.</p>
+          </article>
+          <article class="principle spot reveal">
+            <span class="principle__n">ii.</span>
+            <h3>Tokens are a budget</h3>
+            <p>Trimming inputs, de-duplicating before the call, batching, and schedulers that respect rate limits. Cost and latency are product features, so I design for them from day one.</p>
+          </article>
+          <article class="principle spot reveal">
+            <span class="principle__n">iii.</span>
+            <h3>Private by default</h3>
+            <p>When data can't leave the network, the model comes to the data: local LLMs through Ollama, and per-user vector collections so one tenant's documents never reach another's answers.</p>
+          </article>
+          <article class="principle spot reveal">
+            <span class="principle__n">iv.</span>
+            <h3>The harness is the product</h3>
+            <p>Scope guards, rate limits, circuit breakers and audit trails go in the first version. The model is one component; the system around it decides whether it can be trusted.</p>
+          </article>
+        </div>
+
+        <div class="beyond">
+          <div class="beyond__item reveal">
+            <p class="eyebrow">Volunteering · since 2023</p>
+            <h3>Translators without Borders</h3>
+            <p>Translate dementia-awareness and cancer-awareness content from English into Marathi, making health information accessible to more people.</p>
+          </div>
+          <div class="beyond__item reveal">
+            <p class="eyebrow">Volunteering</p>
+            <h3>United Nations Volunteers</h3>
+            <p>Shortlisted for and took part in a UNFPA online meeting on demographic trends in Germany.</p>
+          </div>
+          <div class="beyond__item reveal">
+            <p class="eyebrow">Languages</p>
+            <h3>English · Hindi · Marathi</h3>
+            <p>Professional working proficiency in English, with native or bilingual proficiency in Hindi and Marathi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── CONTACT ───────────── -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__inner reveal">
+        <img class="contact__avatar" src="assets/img/parag-patil.jpg" alt="" width="96" height="96" loading="lazy">
+        <p class="status"><span class="status__dot" aria-hidden="true"></span>Open to GenAI / LLM engineering roles</p>
+        <h2 class="contact__title">Let's build something <em>grounded.</em></h2>
+        <p class="contact__lede">I'm an immediate joiner, happy to work from the office in Pune and open to Mumbai, Bengaluru, Hyderabad or remote. The fastest way to reach me is LinkedIn.</p>
+        <div class="contact__cta">
+          <a class="btn btn--accent btn--lg" href="https://www.linkedin.com/in/parag-patil-824b52253/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.15-.02-2.64-1.6-2.64-1.62 0-1.86 1.26-1.86 2.56v4.92h-4z"/></svg>
+            Message me on LinkedIn
+          </a>
+          <a class="btn btn--ghost btn--lg" href="https://github.com/paragpatil51" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--ghost btn--lg" href="assets/Parag-Patil-Resume.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+            Résumé (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Parag Patil</span>
+      <span class="footer__mid">Hand-built with HTML, CSS &amp; vanilla JS · hosted on GitHub Pages</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ───────────── ARTICLE READER ───────────── -->
+  <div class="reader" id="reader" hidden>
+    <div class="reader__backdrop" data-close-reader></div>
+    <article class="reader__box" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+      <button class="icon-btn reader__close" type="button" data-close-reader aria-label="Close article">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="reader__scroll" id="readerBody"></div>
+    </article>
+  </div>
+
+  <!-- ───────────── LIGHTBOX ───────────── -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Figure viewer">
+    <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Previous figure"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <figure class="lightbox__fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Next figure"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+
+  <!-- ───────────── COMMAND PALETTE ───────────── -->
+  <div class="palette" id="palette" hidden>
+    <div class="palette__backdrop" data-close-palette></div>
+    <div class="palette__box" role="dialog" aria-modal="true" aria-label="Command menu">
+      <div class="palette__search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="paletteInput" type="text" placeholder="Jump to a section, open an article or run an action…" aria-label="Search commands" aria-controls="paletteList" aria-autocomplete="list">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="palette__list" id="paletteList" role="listbox"></ul>
+      <div class="palette__foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> select</span></div>
+    </div>
+  </div>
+
+  <!-- ───────────── AI ASSISTANT (floating) ───────────── -->
+  <button class="ask-fab" type="button" id="askFab" data-open-chat aria-haspopup="dialog" aria-controls="chat">
+    <span class="ask-fab__avatar"><img src="assets/img/parag-patil.jpg" alt="" width="34" height="34"><i></i></span>
+    <span class="ask-fab__label"><b>Ask my AI</b><span>about Parag's work</span></span>
+  </button>
+
+  <section class="chat" id="chat" role="dialog" aria-modal="false" aria-labelledby="chatTitle" hidden>
+    <header class="chat__head">
+      <span class="chat__avatar"><img src="assets/img/parag-patil.jpg" alt="" width="40" height="40"><i></i></span>
+      <div class="chat__who">
+        <h2 id="chatTitle">Parag's AI assistant</h2>
+        <p>Answers only from this portfolio</p>
+      </div>
+      <button class="icon-btn icon-btn--sm" type="button" id="chatReset" aria-label="Start a new conversation" title="New conversation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+      </button>
+      <button class="icon-btn icon-btn--sm" type="button" id="chatClose" aria-label="Close assistant">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <div class="chat__log" id="chatLog" aria-live="polite"></div>
+    <form class="chat__form" id="chatForm" autocomplete="off">
+      <label class="sr-only" for="chatInput">Ask a question about Parag</label>
+      <input id="chatInput" type="text" placeholder="Ask about projects, RAG, availability…" maxlength="200">
+      <button class="chat__send" type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </form>
+    <p class="chat__note">BM25 retrieval over a curated knowledge base. No API calls, and nothing leaves your browser.</p>
+  </section>
+
+  <!-- Reading progress, framed as a context window -->
+  <div class="ctx" id="ctx" aria-hidden="true">
+    <span class="ctx__k">context</span>
+    <span class="ctx__bar"><i></i></span>
+    <span class="ctx__v"><span id="ctxUsed">0</span> / <span id="ctxTotal">0</span></span>
+  </div>
+
+  <script src="assets/js/files.js"></script>
+  <script src="assets/js/writing.js"></script>
+  <script src="assets/js/knowledge.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
