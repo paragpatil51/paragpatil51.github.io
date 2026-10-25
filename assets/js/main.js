@@ -76,10 +76,13 @@
     var secObs = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (!e.isIntersecting) return;
-        links.forEach(function (l) { l.classList.toggle("is-active", l.getAttribute("href") === "#" + e.target.id); });
+        // The hero (and the model strip below it) has no tab, so it clears the highlight
+        var id = e.target.id ? "#" + e.target.id : "";
+        links.forEach(function (l) { l.classList.toggle("is-active", !!id && l.getAttribute("href") === id); });
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
     links.forEach(function (l) { var s = $(l.getAttribute("href")); if (s) secObs.observe(s); });
+    $$(".hero, .strip").forEach(function (s) { secObs.observe(s); });
   }
 
   /* ---------- Writing: article cards + feed posts (rendered before reveal observer) ---------- */
